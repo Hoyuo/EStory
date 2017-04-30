@@ -1,0 +1,66 @@
+[
+  {
+    "label": "브랜드패션",
+    "value": 10
+  },
+  {
+    "label": "패션의류",
+    "value": 10
+  },
+  {
+    "label": "잡화/뷰티",
+    "value": 10
+  },
+  {
+    "label": "유아동",
+    "value": 10
+  },
+  {
+    "label": "식품",
+    "value": 10
+  },
+  {
+    "label": "생필품",
+    "value": 10
+  },
+  {
+    "label": "홈데코",
+    "value": 3
+  },
+  {
+    "label": "건강",
+    "value": 10
+  },
+  {
+    "label": "문구/취미",
+    "value": 10
+  },
+  {
+    "label": "스포츠",
+    "value": 10
+  },
+  {
+    "label": "자동차공구",
+    "value": 10
+  },
+  {
+    "label": "가전",
+    "value": 10
+  },
+  {
+    "label": "디지털",
+    "value": 10
+  },
+  {
+    "label": "컴퓨터",
+    "value": 10
+  },
+  {
+    "label": "여행/도서",
+    "value": 10
+  },
+  {
+    "label": "티켓/e쿠폰",
+    "value": 10
+  }
+]
