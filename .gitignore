@@ -51,9 +51,3 @@ fabric.properties
 *.iml
 out
 gen
-.gitignore
-.idea/
-css/
-fonts/
-index.html
-js/
