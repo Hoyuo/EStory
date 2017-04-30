@@ -1,8 +1,7 @@
-var svg = d3.select("body").select("svg")
+var width = 800,
+    height = 500;
 
-var width = 960,
-    height = 450,
-    radius = Math.min(width, height) / 2;
+var radius = Math.min(width, height) / 2;
 
 var pie = d3.layout.pie()
     .value(function (d) {
@@ -17,21 +16,15 @@ var outerArc = d3.svg.arc()
     .innerRadius(radius * 0.9)
     .outerRadius(radius * 0.9);
 
-svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
 var key = function (d) {
     return d.data.label;
 };
 
 var color = d3.scale.category20()
     .domain(["브랜드패션", "패션의류", "잡화/뷰티", "유아동", "식품", "생필품", "홈데코", "건강",
-        "건강", "문구/취미", "스포츠", "자동차공구", "가전", "디지털", "컴퓨터", "여행/도서", "티켓/e쿠폰"])
+        "건강", "문구/취미", "스포츠", "자동차공구", "가전", "디지털", "컴퓨터", "여행/도서", "티켓/e쿠폰"]);
 //        .range(["#1f77b4", "#ff7f0e", "#aec7e8", "#ffbb78", "#2ca02c", "#98df8a", "#d62728", "#ff9896",
 //            "#c49c94", "#8c564b", "#9467bd", "#c5b0d5", "#f7b6d2", "#e377c2", "#7f7f7f", "#c7c7c7", "#dbdb8d", "#bcbd22", "#17becf", "#9edae5"]);
-
-d3.json("data.json", function (error, data) {
-    change(data)
-});
 
 function change(data) {
 

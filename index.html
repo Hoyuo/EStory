@@ -33,7 +33,41 @@
 </head>
 
 <body>
-<svg></svg>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-9">
+            <svg width="1000" height="600">
+
+            </svg>
+        </div>
+
+        <div class="col-md-3">
+            <h2>카테고리</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item">브랜드패션</a>
+                <a href="#" class="list-group-item">패션의류</a>
+                <a href="#" class="list-group-item">잡화/뷰티</a>
+                <a href="#" class="list-group-item">유아동</a>
+                <a href="#" class="list-group-item">식품</a>
+                <a href="#" class="list-group-item">생필품</a>
+                <a href="#" class="list-group-item">홈데코</a>
+                <a href="#" class="list-group-item">건강</a>
+                <a href="#" class="list-group-item">문구/취미</a>
+                <a href="#" class="list-group-item">스포츠</a>
+                <a href="#" class="list-group-item">자동차공구</a>
+                <a href="#" class="list-group-item">가전</a>
+                <a href="#" class="list-group-item">디지털</a>
+                <a href="#" class="list-group-item">컴퓨터</a>
+                <a href="#" class="list-group-item">여행/도서</a>
+                <a href="#" class="list-group-item">티켓/e쿠폰</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
 <script>
     var svg = d3.select("body")
         .select("svg")
@@ -46,11 +80,15 @@
     svg.append("g")
         .attr("class", "lines");
 
+    var width = 800,
+        height = 500;
+
+    svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+
     d3.json("data.json", function (error, data) {
         change(data)
     });
-
 </script>
 
-</body>
 </html>
